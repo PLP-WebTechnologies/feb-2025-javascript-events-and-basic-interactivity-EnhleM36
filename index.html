@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polymerase Chain Reaction (PCR) Tutorial</title>
+    <meta name="keywords" content="PCR, Polymerase Chain Reaction, DNA amplification, molecular biology, Kary Mullis">
+    <meta name="description" content="Learn about the Polymerase Chain Reaction (PCR) technique, its applications, and how it works. Explore interactive simulations and quizzes.">
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <header>
+        <h1>Polymerase Chain Reaction (PCR)</h1>
+        <p class="subtitle">The Revolutionary DNA Amplification Technique</p>
+    </header>
+    
+    <div class="container">
+        <main>
+            <section id="introduction">
+                <h2>Introduction to PCR</h2>
+                <p>Polymerase Chain Reaction (PCR) is a revolutionary technique in molecular biology used to make millions to billions of copies of a specific DNA segment. Developed by Kary Mullis in 1983, this technique has transformed scientific research, medical diagnostics, forensic science, and many other fields.</p>
+                
+                <div class="color-toggle">
+                    <button id="theme-button" aria-label="Toggle Dark Mode">Toggle Dark Mode</button>
+                </div>
+
+                <div class="slideshow">
+                    <div class="slide active">
+                        <img src="pcr-components_med.jpeg" alt="Overview of the PCR Process">
+                        <p class="slide-caption">Overview of the PCR Process</p>
+                    </div>
+                    <div class="slide">
+                        <img src="pcr-equip.png" alt="PCR Thermal Cycler Equipment">
+                        <p class="slide-caption">PCR Thermal Cycler Equipment</p>
+                    </div>
+                    <div class="slide">
+                        <img src="pcr-applications.jpg" alt="Various Applications of PCR Technology">
+                        <p class="slide-caption">Various Applications of PCR Technology</p>
+                    </div>
+                    <button class="prev" aria-label="Previous Slide">❮</button>
+                    <button class="next" aria-label="Next Slide">❯</button>
+                </div>
+            </section>
+
+            <section id="how-pcr-works">
+                <h2>How PCR Works</h2>
+                
+                <div class="tab-container">
+                    <div class="tab-buttons">
+                        <button class="tab-button active" data-tab="step1" aria-controls="step1" aria-selected="true">Step 1: Denaturation</button>
+                        <button class="tab-button" data-tab="step2" aria-controls="step2" aria-selected="false">Step 2: Annealing</button>
+                        <button class="tab-button" data-tab="step3" aria-controls="step3" aria-selected="false">Step 3: Extension</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="step1" role="tabpanel">
+                        <h3>Denaturation (94-96°C)</h3>
+                        <p>The double-stranded DNA is heated to separate into two single strands. This happens because the hydrogen bonds between complementary bases are broken at high temperatures.</p>
+                        <p>This step typically occurs at 94-96°C for 20-30 seconds. The high temperature breaks the hydrogen bonds between complementary base pairs, separating the DNA double helix into two single-stranded DNA molecules.</p>
+                    </div>
+                    
+                    <div class="tab-content" id="step2" role="tabpanel">
+                        <h3>Annealing (50-65°C)</h3>
+                        <p>The temperature is lowered so that the primers can bind (anneal) to their complementary sequences on the single-stranded DNA.</p>
+                        <p>This step typically occurs at 50-65°C for 20-40 seconds. The exact temperature depends on the primers used - it must be low enough for specific hybridization between primers and template but high enough to prevent non-specific binding.</p>
+                    </div>
+                    
+                    <div class="tab-content" id="step3" role="tabpanel">
+                        <h3>Extension (72°C)</h3>
+                        <p>DNA polymerase synthesizes a new DNA strand complementary to the template strand by adding dNTPs in the 5' to 3' direction.</p>
+                        <p>This step typically occurs at 72°C, which is the optimal temperature for most DNA polymerases. The time needed depends on the length of the DNA fragment being amplified and the speed of the polymerase, but is typically 1 minute per 1000 base pairs.</p>
+                    </div>
+                </div>
+                
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h3>Components Needed for PCR</h3>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>Template DNA</strong>: The DNA containing the target sequence to be amplified</li>
+                            <li><strong>DNA Polymerase</strong>: Heat-stable enzyme (like Taq polymerase) that assembles new DNA strands</li>
+                            <li><strong>Primers</strong>: Short DNA fragments that provide a starting point for DNA synthesis</li>
+                            <li><strong>Nucleotides (dNTPs)</strong>: The building blocks for the new DNA strands</li>
+                            <li><strong>Buffer Solution</strong>: Maintains optimal pH and ion concentrations for the reaction</li>
+                            <li><strong>Magnesium Ions</strong>: Required as a cofactor for DNA polymerase activity</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h3>Types of PCR</h3>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <ul>
+                            <li><strong>Real-Time PCR (qPCR)</strong>: Monitors the amplification of targeted DNA sequence in real-time</li>
+                            <li><strong>Reverse Transcription PCR (RT-PCR)</strong>: Converts RNA to DNA before amplification</li>
+                            <li><strong>Multiplex PCR</strong>: Uses multiple primers to amplify several targets simultaneously</li>
+                            <li><strong>Nested PCR</strong>: Increases specificity with two rounds of amplification using different primers</li>
+                            <li><strong>Digital PCR</strong>: Provides absolute quantification of target nucleic acids</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="applications">
+                <h2>Applications of PCR</h2>
+                <p>PCR has revolutionized many fields due to its ability to produce millions of copies of a specific DNA sequence in a relatively short time. Click on the buttons below to learn about different applications:</p>
+                
+                <div class="tab-container">
+                    <div class="tab-buttons">
+                        <button class="tab-button active" data-tab="medical">Medical Diagnostics</button>
+                        <button class="tab-button" data-tab="forensic">Forensic Science</button>
+                        <button class="tab-button" data-tab="research">Research</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="medical">
+                        <h3>Medical Diagnostics</h3>
+                        <p>PCR is widely used in medical diagnostics to detect infectious diseases, genetic disorders, and cancer markers.</p>
+                        <ul>
+                            <li>Detection of bacterial and viral infections (including COVID-19)</li>
+                            <li>Diagnosis of genetic diseases</li>
+                            <li>Identification of cancer biomarkers</li>
+                            <li>Monitoring of treatment effectiveness</li>
+                            <li>Prenatal genetic screening</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-content" id="forensic">
+                        <h3>Forensic Science</h3>
+                        <p>PCR has revolutionized forensic science by allowing analysis of minuscule DNA samples.</p>
+                        <ul>
+                            <li>DNA fingerprinting in criminal investigations</li>
+                            <li>Paternity testing</li>
+                            <li>Identification of human remains</li>
+                            <li>Archaeological studies</li>
+                            <li>Wildlife forensics to combat illegal trading of endangered species</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-content" id="research">
+                        <h3>Research Applications</h3>
+                        <p>PCR is a fundamental tool in molecular biology research.</p>
+                        <ul>
+                            <li>Cloning experiments</li>
+                            <li>Gene expression studies</li>
+                            <li>Genetic engineering</li>
+                            <li>Evolutionary biology and phylogenetic studies</li>
+                            <li>Metagenomics and microbiome analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="interactive-pcr">
+                <h2>Interactive PCR Simulation</h2>
+                <p>Press keys on your keyboard to control different stages of the PCR process:</p>
+                <ul>
+                    <li>Press <span class="highlight">D</span> for Denaturation</li>
+                    <li>Press <span class="highlight">A</span> for Annealing</li>
+                    <li>Press <span class="highlight">E</span> for Extension</li>
+                    <li>Press <span class="highlight">C</span> to complete one cycle</li>
+                </ul>
+                
+                <div id="pcr-simulation" style="background-color: #f0f0f0; padding: 20px; border-radius: 8px; text-align: center;">
+                    <p>Current Stage: <span id="pcr-stage">Ready to begin</span></p>
+                    <p>Cycles Completed: <span id="cycle-count">0</span>/30</p>
+                    <div id="simulation-display" style="height: 200px; background-color: #e0e0e0; margin: 20px 0; display: flex; flex-direction: column; justify-content: center; align-items: center; border-radius: 4px;">
+                        <p>Press a key to start simulation</p>
+                        <img id="stage-image" src="" alt="Stage Image" style="max-height: 120px; display: none;">
+                    </div>    
+                    <button id="reset-simulation">Reset Simulation</button>
+                </div>    
+                
+                <div id="key-indicator">Key pressed: <span id="key-value"></span></div>
+                
+                <div class="dna-container">
+                    <div class="dna-strand active">
+                        <img src="Double-helix.jpg" alt="Double-stranded DNA">
+                    </div>
+                    <div class="dna-strand">
+                        <img src="copy.jpg" alt="Denaturation - Separated DNA">
+                    </div>
+                    <div class="dna-strand">
+                        <img src="gen.png" alt="Annealing - Primers attached">
+                    </div>
+                    <div class="dna-strand">
+                        <img src="laugh.jpg" alt="Extension - New strands forming">
+                    </div>
+                </div>
+                
+                <div class="progress-container">
+                    <div class="progress-bar" id="pcr-progress"></div>
+                </div>
+                
+                <p class="long-press" id="secret-feature">Press and hold here for 3 seconds to reveal a PCR secret...</p>
+            </section>
+            
+            <section id="pcr-history">
+                <h2>The History of PCR</h2>
+                <p>PCR was invented by <span class="tooltip">Kary Mullis<span class="tooltip-text">American biochemist who was awarded the Nobel Prize in Chemistry in 1993</span></span> in 1983 while working for Cetus Corporation. Here's a timeline of key developments:</p>
+                
+                <div class="tab-container">
+                    <div class="tab-buttons">
+                        <button class="tab-button active" data-tab="history1">Discovery</button>
+                        <button class="tab-button" data-tab="history2">Early Development</button>
+                        <button class="tab-button" data-tab="history3">Modern PCR</button>
+                    </div>
+                    
+                    <div class="tab-content active" id="history1">
+                        <h3>Discovery (1983)</h3>
+                        <p>While driving on Highway 128 from San Francisco to Mendocino, Kary Mullis conceived the idea of using repeated cycles of DNA polymerase activity and temperature changes to amplify DNA sequences. This insight would later earn him the 1993 Nobel Prize in Chemistry.</p>
+                    </div>
+                    
+                    <div class="tab-content" id="history2">
+                        <h3>Early Development (1984-1988)</h3>
+                        <p>Early PCR was labor-intensive, requiring the addition of fresh polymerase after each heating step because the enzymes would denature. The discovery and isolation of Taq polymerase, a heat-stable enzyme from the bacterium Thermus aquaticus found in hot springs, revolutionized the process by eliminating this need.</p>
+                    </div>
+                    
+                    <div class="tab-content" id="history3">
+                        <h3>Modern PCR (1989-Present)</h3>
+                        <p>The development of automated thermal cyclers in the late 1980s made PCR widely accessible. Since then, numerous variations have been developed, including real-time PCR, digital PCR, and highly multiplexed applications that have expanded its utility across many fields of science and medicine.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <aside>
+            <section id="quiz">
+                <h2>Test Your Knowledge</h2>
+                <p>Complete the quiz below to test your understanding of PCR!</p>
+                
+                <form id="quiz-form">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" required>
+                        <div class="feedback" id="name-feedback">Please enter your name</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                        <div class="feedback" id="email-feedback">Please enter a valid email</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Create Password:</label>
+                        <input type="password" id="password" required>
+                        <div class="feedback" id="password-feedback">Password must be at least 8 characters</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>What is PCR used for? (Select all that apply)</label>
+                        <div class="custom-checkbox">
+                            <input type="checkbox" id="use1" name="use">
+                            <label for="use1">Amplifying DNA</label>
+                        </div>
+                        <div class="custom-checkbox">
+                            <input type="checkbox" id="use2" name="use">
+                            <label for="use2">Protein synthesis</label>
+                        </div>
+                        <div class="custom-checkbox">
+                            <input type="checkbox" id="use3" name="use">
+                            <label for="use3">Genetic testing</label>
+                        </div>
+                        <div class="custom-checkbox">
+                            <input type="checkbox" id="use4" name="use">
+                            <label for="use4">Cellular respiration</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="temp">What temperature (°C) is typically used for the denaturation step?</label>
+                        <input type="number" id="temp" min="0" max="100">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="feedback">Additional Comments:</label>
+                        <textarea id="feedback" rows="3" placeholder="Share your thoughts on this PCR tutorial"></textarea>
+                    </div>
+                    
+                    <button type="submit">Submit Quiz</button>
+                </form>
+            </section>
+            
+            <section id="resources">
+                <h2>Additional Resources</h2>
+                <ul>
+                    <li><a href="#" id="resource-link">PCR Animation</a></li>
+                    <li><a href="#">History of PCR</a></li>
+                    <li><a href="#">PCR Troubleshooting Guide</a></li>
+                    <li><a href="#">Advanced PCR Techniques</a></li>
+                </ul>
+            </section>
+            
+            <section id="glossary">
+                <h2>PCR Glossary</h2>
+                <div class="accordion">
+                    <div class="accordion-header">
+                        <h3>Key Terms</h3>
+                        <span class="toggle">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <dl>
+                            <dt>Denaturation</dt>
+                            <dd>The process of separating double-stranded DNA into single strands by heating.</dd>
+                            
+                            <dt>Annealing</dt>
+                            <dd>The binding of primers to complementary sequences on the single-stranded DNA template.</dd>
+                            
+                            <dt>Extension</dt>
+                            <dd>The synthesis of new DNA strands by DNA polymerase.</dd>
+                            
+                            <dt>Primer</dt>
+                            <dd>Short sequences of nucleotides that serve as a starting point for DNA synthesis.</dd>
+                            
+                            <dt>Taq Polymerase</dt>
+                            <dd>A heat-stable DNA polymerase obtained from the bacterium Thermus aquaticus.</dd>
+                        </dl>
+                    </div>
+                </div>
+            </section>
+        </aside>
+    </div>
+    
+    <div class="notification" id="notification">Notification message here</div>
+    
+    <footer>
+        <p>Interactive PCR Tutorial | Double-click anywhere on this footer for a surprise!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
